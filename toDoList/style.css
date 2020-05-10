@@ -1,0 +1,107 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #111;
+    color: white;
+}
+
+h1 {
+    position: relative;
+    color: white;
+    font-size: 3.5em;
+    text-align: center;
+    font-family: 'Hind', sans-serif;
+    top: 3.3vw;
+}
+
+h1 span {
+    color: lime;
+}
+
+.container {
+    position: relative;
+    background-color: none;
+    width: 50vw;
+    margin: auto;
+    top: 3.6vw;
+}
+
+.entrada {
+    position: relative;
+    left: 0;
+    width: 90%;
+    height: 50px;
+    border-radius: 25px;
+    padding-left: 15px;
+    margin-right: 5px;
+    margin-top: 12px;
+    border: 0;
+}
+
+.addButton {
+    margin-top: 12px;
+    position: relative;
+    border: 0;
+    top: 5px;
+    position: relative;
+    height: 3.5vw;
+    width: 3.5vw;
+    border-radius: 25px;
+    text-align: center;
+    line-height: 100%;
+    color: white;
+    background-color: lime;
+    font-weight: bold;
+    font-size: 2vw;
+    cursor: pointer;
+}
+
+.container2 {
+    position: relative;
+    width: 50%;
+    height: auto;
+    margin: auto;
+    background-color: none;
+    top: 14vh;
+    padding-bottom: 2px;
+    border-bottom: 2px solid white;
+    display: block;
+    margin-bottom: 2vh;
+
+}
+
+.saida {
+    position: relative;
+    width: 79%;
+    height: 5vh;
+    background: none;
+    border: none;
+}
+
+.botoes {
+    position: relative;
+    display: inline-block;
+    width: 9%;
+    height: 5vh;
+    margin-left: 0%;
+    font-size: 1.2vw;
+    background-color: white;
+    background: none;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#edit {
+    color: lime;
+}
+
+#remove {
+    color: red;
+}
