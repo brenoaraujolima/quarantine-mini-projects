@@ -1,0 +1,90 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #7F7FD5,#86A8E7,#91EAE4);
+}
+main {
+    position: relative;
+    width: 20%;
+    height: 63%;
+    top: 10%;
+    margin: auto;
+    background-color: #1c1c1c;
+    border-radius: 15px;
+    padding: 0.7%;
+}
+.display {
+    background-color: whitesmoke;
+    border: none;
+    width: 100%;
+    height: 15%;
+    direction: rtl;
+    padding-right: 4px;
+}
+table, tr, td {
+    border: 1px solid black;
+    /* border-collapse: collapse; */
+}
+
+table {
+    position: relative;
+    width: 100%;
+    margin-top: 2%;
+    height: 83%;
+    border: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    border-spacing: 2px;
+
+}
+tr {
+    height: 20%;
+    text-align: center;
+    background-color: grey;
+    cursor: pointer;
+}
+td {
+    border: none;
+}
+
+.header-buttons {
+    position: relative;
+    background-color: #FF00FF;
+    height: 8%;
+    text-align: center;
+    margin-bottom: 0;
+}
+#delete {
+    background-color: orange;
+}
+
+#delete img {
+    position: relative;
+    width:40%;
+    height: 30%:
+}
+
+.header-buttons td {
+    width: 22%;
+}
+
+.line2, .line3 {
+    text-align: center;
+    font-weight: bold;
+    background-color: grey;
+}
+
+.operator {
+    background-color:#000080;
+}
+
+#equal {
+    background-color: orange;
+}
