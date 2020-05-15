@@ -25,6 +25,7 @@ main {
     height: 15%;
     direction: rtl;
     padding-right: 4px;
+    font-size: 1.2em;
 }
 table, tr, td {
     border: 1px solid black;
