@@ -52,7 +52,7 @@ tr {
 td {
     border: none;
 }
-tr:hover {
+td:hover {
     background-color: #B0C4DE;
 }
 .header-buttons {
