@@ -17,8 +17,9 @@ function adicionarEventos() {
 function numeros() {
     numerosOperadores.forEach( elemento => {
         elemento.addEventListener("click", () => {
-            conteudo = conteudo + elemento.innerHTML;
+            conteudo = conteudo.concat(elemento.innerHTML);
             display.setAttribute("value", conteudo);
+
         });
     });
 }
@@ -26,7 +27,7 @@ function numeros() {
 function apagarTudo() {
     ce.addEventListener("click", () => {
         conteudo = "";
-        display.setAttribute("value", "");
+        display.setAttribute("value", "0");
     })
 }
 

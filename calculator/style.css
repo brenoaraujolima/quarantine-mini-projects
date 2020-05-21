@@ -31,7 +31,6 @@ table, tr, td {
     border: 1px solid black;
     /* border-collapse: collapse; */
 }
-
 table {
     position: relative;
     width: 100%;
@@ -43,7 +42,6 @@ table {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
     border-spacing: 2px;
-
 }
 tr {
     height: 20%;
@@ -54,7 +52,9 @@ tr {
 td {
     border: none;
 }
-
+tr:hover {
+    background-color: #B0C4DE;
+}
 .header-buttons {
     position: relative;
     background-color: #FF00FF;
@@ -65,27 +65,39 @@ td {
 #delete {
     background-color: orange;
 }
-
 #delete img {
     position: relative;
     width:40%;
     height: 30%:
 }
-
 .header-buttons td {
     width: 22%;
 }
-
 .line2, .line3 {
     text-align: center;
     font-weight: bold;
     background-color: grey;
 }
-
 .operator {
     background-color:#000080;
 }
-
 #equal {
     background-color: orange;
+}
+
+@media only screen and (max-width: 800px) {
+    main {
+        width: 99%;
+        height: 99.9%;
+        top:0.2%;
+        padding: 2.5%;
+        border-radius: 1px;
+    }
+    table {font-size: 1.8em;}
+    .display {font-size: 1.8em;}
+}
+@media only screen and (max-width: 800px) and (orientation:landscape) {
+    main {width: 70%;}
+    table {font-size: 1.3em;}
+    .display {font-size: 1.4em;}
 }
