@@ -1,22 +1,24 @@
-const game = {
-    cells: document.querySelectorAll("div"),
+let game = {
+    cells: document.querySelectorAll(".cell"),
     positions: ["","","","","","","","",""],
     symbols: ["o", "x"],
     symbolFlag: 0,
 
-    init: function() {
-        this.cells.forEach((element,index) => {
-            element.addEventListener("click", () => {
-                element.innerHTML = this.symbols[this.symbolFlag];
-                this.positions[index] = this.symbols[this.symbolFlag];
-                this.trocar();
-                console.log(this.positions);
-            });
-        });
+    change: function() {
+        if(game.symbolFlag == 1)    return 0;
+        else                        return 1;
     },
 
-    trocar: function() {
-        if(this.symbolFlag == 0)    this.symbolFlag = 1;
-        else                        this.symbolFlag = 0;
+    draw: function(e) {
+        e.currentTarget.innerHTML = game.symbols[game.symbolFlag];
+        game.symbolFlag = game.change();
+        e.currentTarget.removeEventListener("click", game.draw);
+    },
+
+    init: function() {
+        for(var el of this.cells) {
+            console.log(el);
+            el.addEventListener("click", game.draw);
+        }
     }
 };
