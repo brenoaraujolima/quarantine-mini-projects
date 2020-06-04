@@ -10,18 +10,48 @@ html, body {
     background: greenyellow;
 }
 
+.header {
+    position: relative;
+    top: 5%;
+    font-size: 200%;
+    color: #302b63;
+    font-weight: bold;
+    text-align: center;
+}
+
+.player {
+    position: relative;
+    font-size: 150%;
+    top: 10%;
+    display: inline-block;
+    width: 14vw;
+    text-align: center;
+    color: #302b63;
+    left: 50%;
+    transform: translateX(-100%);
+}
+
+.active {
+    color: #FFD700;
+    font-weight: bold;
+    background-color: #302b63;
+    border-radius: 20px;
+    padding: 0.2%;
+}
+
 .container {
     position: relative;
-    width: 30vw;
-    height: 30vw;
+    width: 28vw;
+    height: 28vw;
     display: grid;
     background-color: #FFFFFF;
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: 33% 33% 33%;
     grid-gap: 0.33%;
-    top: 50%;
+    top: 42%;
     left: 50%;
     transform: translate(-50%,-50%);
+    box-shadow: 0 0 1.5px 1.5px black;
 
 }
 
@@ -31,9 +61,25 @@ html, body {
     justify-items: center;
     align-items: center;
     color: white;
-    font-size: 8vw;
+    font-size: 7vw;
     text-align: center;
     line-height: 100%;
+    cursor: pointer;
+}
+
+.win {
+    text-align: center;
+}
+
+.regame {
+    position: relative;
+    top: 15%;
+    display: inline-block;
+    width: 25vw;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    cursor: pointer;
 }
 
 @media only screen and (max-width: 700px) {

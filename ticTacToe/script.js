@@ -53,13 +53,25 @@ const game = {
     },
 
     init: function() {
+        // game.winningSequences = game.fillWins();
+        document.querySelector(".regame").addEventListener("click", game.fillBlank);
+        game.addBoardEvents();
+    },
+
+    addBoardEvents: function() {
         let i = 0;
-        game.winningSequences = game.fillWins();
         for(let el of this.cells) {
             el.addEventListener("click", game.draw);
             el.setAttribute("id", i);
             i++;
         }
+    },
+
+    fillBlank: function() {
+        for(i of game.cells) {
+            i.innerHTML = "";
+        }
+        game.addBoardEvents();
     },
 
     fillWins: function() {
