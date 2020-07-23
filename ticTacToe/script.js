@@ -6,7 +6,6 @@ const game = {
     symbolFlag: 0,
     runningFlag: false,
 
-
     makePlay: function(e) {
         game.positions[e.getAttribute("id")] = game.symbols[game.symbolFlag];
         game.checkWinner(e.getAttribute("id"));
@@ -48,8 +47,7 @@ const game = {
             document.querySelectorAll(".player")[1].className = "player active";
             document.querySelectorAll(".player")[0].className = "player";
             return 1;
-        }
-            
+        }        
     },
 
     draw: function(e) {
